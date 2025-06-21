@@ -6,23 +6,23 @@ idade= 18
 
 print (f'Meu nome é {nome} e eu tenho {18} anos.')
 print ('-'*12)
-#2. Atribua os valores 5 e 10 às variáveis a e b. Troque os valores entre elas e imprima os resultados finais.
 
+#2. Atribua os valores 5 e 10 às variáveis a e b. Troque os valores entre elas e imprima os resultados finais.
 a=5
 b=10
 
 print('a=',b)
 print('b=',a)
 print ('-'*12)
-#3. Crie uma constante chamada PI com valor 3.14159 e imprima o valor da área de um círculo de raio 4.
 
+#3. Crie uma constante chamada PI com valor 3.14159 e imprima o valor da área de um círculo de raio 4.
 PI= 3.14159
 raio=4
 area= PI*(raio**2)
 print (f'O valor da área de um círculo de raio {raio} é:{area}')
 print ('-'*12)
-#4. Crie três variáveis: uma do tipo inteiro, uma do tipo float e uma do tipo string. Use type() para imprimir o tipo de cada uma.
 
+#4. Crie três variáveis: uma do tipo inteiro, uma do tipo float e uma do tipo string. Use type() para imprimir o tipo de cada uma.
 v1= 25
 v2= 87.87
 v3= 'Hello word'
