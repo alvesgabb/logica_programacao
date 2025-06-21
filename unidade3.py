@@ -28,13 +28,10 @@ print ('-'*12)
 idade=int (input('Digite aqui a sua idade:'))
 print (f'Você lá viveu {idade*365} dias aproximadamente!')
 
-
 #Escreva um programa que peça ao usuário para digitar seu nome e sobrenome SEPARADAMENTE e imprima na tela o nome completo.
 nome= (input('Digite aqui seu nome:'))
 sobrenome= (input('Digite aqui seu sobrenome:'))
 print (f'Seu nome completo é {nome} {sobrenome}')
-
-
 print('-'*12)
 
 #Escreva um programa que peça ao usuário para digitar a temperatura em Fahrenheit e converta para Celsius e Kelvin, imprimindo o resultado na tela.
