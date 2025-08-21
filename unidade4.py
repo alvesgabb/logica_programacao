@@ -8,50 +8,25 @@ if dia== 'sábado' or dia=='domingo':
 else:
  print('Dia útil')
 
+"""2. No mundo de The Witcher, criaturas diferentes apresentam características únicas. Baseado nas pistas abaixo, escreva um programa que identifique o tipo de criatura que Geralt está enfrentando:
+Se o monstro aparece à noite, tem garras e evita prata, é um Lobisomem.
+Se aparece durante o dia ou à noite, é rápido e ataca em grupo, é um Nekker.
+Se aparece em qualquer horário, não tem olhos, mas imita vozes humanas, é um Mímico.
+Se nenhuma dessas combinações for satisfeita, o programa deve imprimir: "Criatura desconhecida. Prepare-se para o pior." """
 
- '''2) Escreva um programa que leia um número inteiro entre 1 e 12 e imprima o nome do mês correspondente. Utilize a estrutura condicional
- de seleção múltipla para resolver o problema. Se o número estiver fora dessa faixa, imprima "Número inválido.'''
+horario=(input('Em qual turno o monstro aparece? (dia ou noite):')).lower()
+caracteristica1=(input('Digite a primeira caracteristica ( "tem garras", " é rápido", "não tem olhos"):')).lower()
+caracteristica2=(input('Digite a segunda caracteristica ("evita prata", "ataca em grupo", "imita vozes humanas"):')).lower()
 
-mes= int (input('Digite aqui um mês de 1 a 12:'))
-if mes== 1:
- print('JANEIRO')
-
-elif mes== 2:
- print('FEVEREIRO')
-
-elif mes== 3:
-  print('MARÇO')
-
-elif mes== 4:
- print('ABRIL')
-
-elif mes== 5:
- print ('MAIO')
-
-elif mes== 6:
- print('JUNHO')
-
-elif mes==7:
- print('JULHO')
-
-elif mes== 8:
- print('AGOSTO')
-
-elif mes== 9:
- print ('SETEMBRO')
-
-elif mes== 10:
- print ('OUTUBRO')
-
-elif mes== 11:
- print('NOVEMBRO')
-
-elif mes== 12:
- print('DEZEMBRO')
-
+if horario=='noite' and caracteristica1==' tem garras' and caracteristica2=='evita prata':
+ print('Ele é um lobisomem')
+elif (horario=='dia' or horario=='noite') and caracteristica1=='é rápido' and caracteristica2=='ataca em grupo':
+ print('Ele é um Nekker!')
+elif caracteristica1=='não tem olhos' and caracteristica2=='imita vozes humanas':
+ print ('Ele é um Mímico!')
 else:
- print('NÚMERO INVÁLIDO')
-
+ print('Criatura desconhecida. Prepare-se para o pior.')
+ 
 
 '''3) Escreva um programa que receba o salário de uma pessoa e diga quanto ela pagará apenas de Imposto de Renda.
 Considere as seguintes faixas de incidência do imposto:'''
@@ -129,4 +104,5 @@ if not tem_numero:
    print('A senha deve ter pelo menos um número.')
 if tem_espaço:
     print('A senha não deve conter espaços.')
+
 
